@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Letter</title>
+    <style>
+        #popup {
+            display: block;
+            position: fixed;
+            top: 20%;
+            left: 25%;
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #popup button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #popup button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="popup">
+        <h2>Hello! Here's a message for you:</h2>
+        <p>This is your special pop-up letter! <3</p>
+        <button onclick="location.href='nextPage.html'">Go to Next Page</button>
+    </div>
+</body>
+</html>

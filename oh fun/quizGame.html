@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        .question {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="question">What's the capital of France?</p>
+        <button onclick="checkAnswer('Paris')">Paris</button>
+        <button onclick="checkAnswer('London')">London</button>
+        <button onclick="checkAnswer('Berlin')">Berlin</button>
+    </div>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'Paris') {
+                alert('Correct! Moving to the next page...');
+                location.href = 'celebration.html';
+            } else {
+                alert('Wrong answer, try again!');
+            }
+        }
+    </script>
+</body>
+</html>
